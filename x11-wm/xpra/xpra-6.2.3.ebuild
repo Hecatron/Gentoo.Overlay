@@ -25,7 +25,7 @@ DESCRIPTION="X Persistent Remote Apps (xpra) and Partitioning WM (parti) based o
 HOMEPAGE="https://xpra.org/"
 LICENSE="GPL-2 BSD"
 SLOT="0"
-IUSE="+X avif brotli +client +clipboard crypt csc cuda cups dbus debug doc examples gstreamer +gtk3 html ibus jpeg +lz4 lzo mdns minimal oauth opengl openh264 pinentry pulseaudio qrcode +server sound systemd test +trayicon udev vpx webcam webp x264 xdg xinerama quic"
+IUSE="+X avif brotli +client +clipboard crypt csc cuda cups dbus debug doc examples gstreamer +gtk3 html ibus jpeg +lz4 lzo mdns minimal oauth opengl openh264 pinentry pulseaudio qrcode +server sound systemd test +trayicon udev vpx webcam webp x264 xdg xinerama quic svg"
 IUSE+=" video_cards_nvidia"
 RESTRICT="!test? ( test )"
 
@@ -98,6 +98,8 @@ DEPEND="
 		x11-libs/libxkbfile
 	)
 	x264? ( media-libs/x264 )
+	svg? ( gnome-base/librsvg )
+	media-libs/freetype
 "
 # nvenc? ( amd64? ( media-libs/nv-codec-headers ) )
 RDEPEND="
