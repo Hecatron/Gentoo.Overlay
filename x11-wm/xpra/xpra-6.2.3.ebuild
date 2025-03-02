@@ -100,6 +100,7 @@ DEPEND="
 	x264? ( media-libs/x264 )
 	svg? ( gnome-base/librsvg )
 	media-libs/freetype
+	gstreamer? ( media-plugins/gst-plugins-ximagesrc )
 "
 # nvenc? ( amd64? ( media-libs/nv-codec-headers ) )
 RDEPEND="
