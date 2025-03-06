@@ -292,7 +292,7 @@ python_compile() {
 		export NVCC_PREPEND_FLAGS="-ccbin $(cuda_gccdir)/g++"
 	fi
 
-	INCLUDE_DIRS=/usr/include/security/ PYTHONPATH="${S}" distutils-r1_python_compile
+	INCLUDE_DIRS=/usr/include/security PYTHONPATH="${S}" distutils-r1_python_compile
 }
 
 python_test() {
